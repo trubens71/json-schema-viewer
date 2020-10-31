@@ -165,6 +165,7 @@
             var loc = window.location,
             //if not already set, set the root schema location
             //this allows dev ENV to override the schema location
+                JSV.schema = 'https://raw.githubusercontent.com/trubens71/verde/master/schemas/verde_asc_domain_schema.json' //trubens
                 schema = JSV.schema ? JSV.schema : loc.origin + loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1) + 'schemas/schema/schema.json';
 
             JSV.init({
